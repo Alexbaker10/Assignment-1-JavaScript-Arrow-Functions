@@ -9,137 +9,75 @@
 // PART 1: CONVERT TO ARROW FUNCTIONS
 // =============================================
 
-// Exercise 1: Convert this function declaration to an arrow function
-function greetUser(name) {
-    return `Hello, ${name}!`;
-}
-// Update greetUserArrow below to implement the function shown above. Delete null and then write your arrow function.
-const greetUserArrow = null;
+// Exercise 1
+const greetUserArrow = (name) => `Hello, ${name}!`;
 
+// Exercise 2
+const calculateAreaArrow = (length, width) => length * width;
 
+// Exercise 3
+const getCurrentTimeArrow = () => new Date().toLocaleTimeString();
 
-// Exercise 2: Convert this function expression to an arrow function
-function calculateArea(length, width) {
-    return length * width;
-};
-// Update calculateAreaArrow below to implement the function shown above. Delete null and then write your arrow function.
-const calculateAreaArrow = null;
-
-
-
-// Exercise 3: Convert this function with no parameters to an arrow function
-function getCurrentTime() {
-    return new Date().toLocaleTimeString();
-}
-// Update getCurrentTimeArrow below to implement the function shown above. Delete null and then write your arrow function.
-const getCurrentTimeArrow = null;
-
-
-
-// Exercise 4: Convert this multi-line function to an arrow function
-function validatePassword(password) {
+// Exercise 4
+const validatePasswordArrow = (password) => {
     if (password.length >= 8) {
         return "Password is valid";
     } else {
         return "Password must be at least 8 characters";
     }
-}
-// Update validatePasswordArrow below to implement the function shown above. Delete null and then write your arrow function.
-const validatePasswordArrow = null;
+};
 
-
-
-// Exercise 5: Convert this function to an arrow function
-function processOrder(item, quantity) {
+// Exercise 5
+const processOrderArrow = (item, quantity) => {
     const total = item.price * quantity;
     const tax = total * 0.08;
     const finalAmount = total + tax;
     return `Order total: ${finalAmount.toFixed(2)}`;
-}
-// Update processOrderArrow below to implement the function shown above. Delete null and then write your arrow function.
-const processOrderArrow = null
-
+};
 
 
 // =============================================
 // PART 2: WRITING ARROW FUNCTIONS
 // =============================================
 
-// Exercise 6: Create an arrow function called createFullName that has MULTIPLE parameters
-// createFullName should take a first and last name as arguments and return full name as a single string the format "FIRST LAST"
+// Exercise 6
+const createFullName = (firstName, lastName) => `${firstName} ${lastName}`;
 
+// Exercise 7
+const calculateVolume = (length, width, height) => length * width * height;
 
+// Exercise 8
+const getFirstElement = (array) => array[0];
 
+// Exercise 9
+const makeUppercase = (str) => str.toUpperCase();
 
+// Exercise 10
+const getSquare = (num) => num * num;
 
+// Exercise 11
+const checkAge = (age) => (age >= 18 ? "Adult" : "Minor");
 
-// Exercise 7: Create an arrow function called calculateVolume that has MULTIPLE parameters
-// calculateVolume should have three arguments (length, width, and height) and return the volume of a rectangular box (length * width * height)
+// Exercise 12
+const calculateAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
+// Exercise 13
+const evaluateScores = (s1, s2, s3) => {
+    const maxScore = Math.max(s1, s2, s3);
+    if (maxScore >= 90) {
+        return `Excellent work! Top score: ${maxScore}`;
+    } else if (maxScore >= 70) {
+        return `Good job! Top score: ${maxScore}`;
+    } else {
+        return `Keep practicing! Top score: ${maxScore}`;
+    }
+};
 
-
-
-
-
-// Exercise 8: Create an arrow function called getFirstElement
-// getFirstElement should take an array as an argument and return the first element in the array
-
-
-
-
-
-// Exercise 9: Create an arrow function called makeUppercase
-// makeUppercase should take a string as an argument and return the string in all uppercase (e.g. "hello" becomes "HELLO")
-
-
-
-
-
-
-// Exercise 10: Create an arrow function called getSquare
-// getSquare should take a number as an argument and return the square of that number
-
-
-
-
-
-
-// Exercise 11: Create an arrow function called checkAge that uses conditional logic
-// checkAge should take an age as an argument and return "Adult" if the age is 18 or larger and "Minor" if the age is under 18
-
-
-
-
-
-
-// Exercise 12: Create an arrow function called calculateAverage that returns the average of three numbers
-// calculateAverage should take three test scores as arguments and return the average of these scores
-
-
-
-
-
-
-// Exercise 13: Write an arrow function called evaluateScores that returns a message based on the students score
-/* 
-evaluateScores should take three test scores, find the highest score, and return one of the following messages:
-    Return "Excellent work! Top score: [score]" if highest score is 90+
-    Return "Good job! Top score: [score]" if highest score is 70-89
-    Return "Keep practicing! Top score: [score]" if highest score is below 70 
-*/
-
-
-
-
-
-
-// Exercise 14: Write an arrow function called calculateSalePrice that calculates the sale price of an item. 
-// calculateSalePrice should take a product name and price as arguments, add a 20% discount, and return formatted string in the format "Product: [name] - Sale Price: $[price with markup]"
-
-
-
-
-
+// Exercise 14
+const calculateSalePrice = (productName, price) => {
+    const salePrice = price * 0.8;
+    return `Product: ${productName} - Sale Price: $${salePrice}`;
+};
 
 // =============================================
 // TEST YOUR FUNCTIONS (DO NOT MODIFY)
