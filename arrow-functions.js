@@ -83,24 +83,22 @@ const calculateSalePrice = (productName, price) => {
 // TEST YOUR FUNCTIONS (DO NOT MODIFY)
 // =============================================
 
-// You can uncomment these lines to test your functions
+console.log("Testing Part 1:");
+console.log(greetUserArrow("Alice")); // Should output: "Hello, Alice!"
+console.log(calculateAreaArrow(5, 3)); // Should output: 15
+console.log(getCurrentTimeArrow()); // Should output current time
+console.log(validatePasswordArrow("secret")); // Should output: "Password must be at least 8 characters"
+console.log(processOrderArrow({price: 10}, 2)); // Should output: "Order total: $21.60"
 
-// console.log("Testing Part 1:");
-// console.log(greetUserArrow("Alice")); // Should output: "Hello, Alice!"
-// console.log(calculateAreaArrow(5, 3)); // Should output: 15
-// console.log(getCurrentTimeArrow()); // Should output current time
-// console.log(validatePasswordArrow("secret")); // Should output: "Password must be at least 8 characters"
-// console.log(processOrderArrow({price: 10}, 2)); // Should output: "Order total: $21.60"
-
-// console.log("\nTesting Part 2:");
-// console.log(makeUppercase("hello")); // Should output: "HELLO"
-// console.log(getSquare(4)); // Should output: 16
-// console.log(createFullName("John", "Doe")); // Should output: "John Doe"
-// console.log(calculateVolume(2, 3, 4)); // Should output: 24
-// console.log(checkAge(25)); // Should output: "Adult"
-// console.log(checkAge(16)); // Should output: "Minor"
-// console.log(getFirstElement([1, 2, 3, 4])); // Should output: 1
-// console.log(calculateAverage(85, 92, 78)); // Should output: 85
-// console.log(evaluateScores(95, 87, 92)); // Should output: "Excellent work! Top score: 95"
-// console.log(evaluateScores(75, 68, 82)); // Should output: "Good job! Top score: 82"
-// console.log(calculateSalePrice("Laptop", 100)); // Should output: "Product: Laptop - Sale Price: $80"
+console.log("\nTesting Part 2:");
+console.log(makeUppercase("hello")); // Should output: "HELLO"
+console.log(getSquare(4)); // Should output: 16
+console.log(createFullName("John", "Doe")); // Should output: "John Doe"
+console.log(calculateVolume(2, 3, 4)); // Should output: 24
+console.log(checkAge(25)); // Should output: "Adult"
+console.log(checkAge(16)); // Should output: "Minor"
+console.log(getFirstElement([1, 2, 3, 4])); // Should output: 1
+console.log(calculateAverage(85, 92, 78)); // Should output: 85
+console.log(evaluateScores(95, 87, 92)); // Should output: "Excellent work! Top score: 95"
+console.log(evaluateScores(75, 68, 82)); // Should output: "Good job! Top score: 82"
+console.log(calculateSalePrice("Laptop", 100)); // Should output: "Product: Laptop - Sale Price: $80"
